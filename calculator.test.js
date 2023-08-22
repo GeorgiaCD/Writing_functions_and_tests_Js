@@ -202,4 +202,24 @@ describe('even', () => {
 // odd 
 describe('odd', () => {
 
+
+  test('can return true', ()=>{
+    expected = true ;
+    actual = odd(3);
+    expect(actual).toBe(expected);
+  }); 
+
+  test('can return false', ()=>{
+    expected = false;
+    actual = odd(10);
+    expect(actual).toBe(expected);
+  }); 
+
+  test('can 0 ', ()=>{
+    expected = false;
+    actual = odd(0);
+    expect(actual).toBe(expected);
+  }); 
+
+
 });
