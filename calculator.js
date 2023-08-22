@@ -2,17 +2,33 @@ const sum = function(a, b){
     return a + b;
 };
 
-const subtract = function(a, b){};
+const subtract = function(a, b){
+    return a - b;
+};
 
-const multiply = function(a,b){};
+const multiply = function(a,b){
+    return a * b;
+};
 
-const divide = function(a,b){};
+const divide = function(a,b){
+    return a / b ; 
+};
 
-const modulus = function(a,b){};
+const modulus = function(a,b){
+    return a % b 
+};
 
-const even = function(a,b){};
+const even = function(a){
+    if(a % 2 == 0){
+        return true;} 
+    else { return false;}
+};
 
-const odd = function(a,b){};
+const odd = function(a,b){
+    if(a % 2 !== 0){
+        return true;} 
+    else{ return false;}
+};
 
 module.exports = { 
     sum, 
@@ -23,3 +39,11 @@ module.exports = {
     even, 
     odd 
 };
+
+
+
+// console.log(sum(2,3));
+
+// console.log(divide(10,5));
+
+// console.log(even(2));
