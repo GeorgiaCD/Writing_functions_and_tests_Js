@@ -46,4 +46,6 @@ module.exports = {
 
 // console.log(divide(10,5));
 
-// console.log(even(2));
+console.log(even(0));
+
+console.log(divide(10,0));

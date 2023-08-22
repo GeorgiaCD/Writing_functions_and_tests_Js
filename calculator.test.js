@@ -114,10 +114,37 @@ describe('multiply', () => {
 // divide 
 describe('divide', () => {
 
-  test('', ()=>{
-    expected = ;
-    actual = divide(a,b);
+  test('can divide two positive numbers', ()=>{
+    expected = 10;
+    actual = divide(20,2);
     expect(actual).toBe(expected);
+  }); 
+
+  test('can divide two negative numbers', ()=>{
+    expected =  10 ;
+    actual = divide(-20,-2);
+    expect(actual).toBe(expected);
+  }); 
+
+
+  test('can divide one negative and one positive number', ()=>{
+    expected = -10;
+    actual = divide(-20,2);
+    expect(actual).toBe(expected);
+  }); 
+
+
+  test('doesnt divide by 0', ()=>{
+    expected = Infinity;
+    actual = divide(10,0);
+    expect(actual).toBe(expected);
+  }); 
+
+  test('can divide 0', ()=>{
+    expected = 0;
+    actual = divide(0,10);
+    expect(actual).toBe(expected);
+  }); 
 
 
 });
@@ -130,11 +157,44 @@ describe('divide', () => {
 // modulus 
 describe('modulus', () => {
 
+  test('can perform modulus', ()=>{
+    expected = 2;
+    actual = modulus(10,4);
+    expect(actual).toBe(expected);
+  }); 
+
+  test('can perform modulus with factor', ()=>{
+    expected = 0;
+    actual = modulus(10,2);
+    expect(actual).toBe(expected);
+  }); 
+
+
 });
 
 
 // even 
 describe('even', () => {
+
+  test('can return true', ()=>{
+    expected = true ;
+    actual = even(10);
+    expect(actual).toBe(expected);
+  }); 
+
+  test('can return false', ()=>{
+    expected = false;
+    actual = even(3);
+    expect(actual).toBe(expected);
+  }); 
+
+  test('can 0 ', ()=>{
+    expected = true;
+    actual = even(0);
+    expect(actual).toBe(expected);
+  }); 
+
+
 
 });
 
